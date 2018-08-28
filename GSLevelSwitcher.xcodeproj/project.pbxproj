@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		CE16DBA6213567E10073C93A /* GSLevelSwitcher.h in Headers */ = {isa = PBXBuildFile; fileRef = CE16DBA4213567E10073C93A /* GSLevelSwitcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE16DBAE2135680E0073C93A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE16DBAC2135680D0073C93A /* Main.storyboard */; };
+		CE16DBAF2135680E0073C93A /* LevelSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16DBAD2135680E0073C93A /* LevelSwitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE16DBA1213567E10073C93A /* GSLevelSwitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GSLevelSwitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE16DBA4213567E10073C93A /* GSLevelSwitcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSLevelSwitcher.h; sourceTree = "<group>"; };
 		CE16DBA5213567E10073C93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE16DBAC2135680D0073C93A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CE16DBAD2135680E0073C93A /* LevelSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSwitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		CE16DBA3213567E10073C93A /* GSLevelSwitcher */ = {
 			isa = PBXGroup;
 			children = (
+				CE16DBAD2135680E0073C93A /* LevelSwitch.swift */,
+				CE16DBAC2135680D0073C93A /* Main.storyboard */,
 				CE16DBA4213567E10073C93A /* GSLevelSwitcher.h */,
 				CE16DBA5213567E10073C93A /* Info.plist */,
 			);
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					CE16DBA0213567E10073C93A = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -120,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE16DBAE2135680E0073C93A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE16DBAF2135680E0073C93A /* LevelSwitch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +270,7 @@
 		CE16DBAA213567E10073C93A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +288,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.deepgagan.GSLevelSwitcher;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +297,7 @@
 		CE16DBAB213567E10073C93A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

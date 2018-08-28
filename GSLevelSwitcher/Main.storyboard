@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Level Switch-->
+        <scene sceneID="XSh-yP-IeS">
+            <objects>
+                <viewController storyboardIdentifier="LevelSwitch" id="5ev-DU-sRE" customClass="LevelSwitch" customModule="GSLevelSwitch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8pa-Bp-kZ9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMx-kR-stf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kN1-0W-iTx">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3FA-4j-ueW">
+                                            <rect key="frame" x="119.5" y="297.5" width="136" height="72"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="DKv-pk-uCf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="72"/>
+                                                    <subviews>
+                                                        <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NmR-uN-24P">
+                                                            <rect key="frame" x="0.0" y="0.0" width="136" height="72"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="72" id="1VG-KV-89Q"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="136" id="rmo-YO-J1W"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DKv-pk-uCf" firstAttribute="leading" secondItem="3FA-4j-ueW" secondAttribute="leading" id="9ya-Fe-fwR"/>
+                                                <constraint firstItem="DKv-pk-uCf" firstAttribute="top" secondItem="3FA-4j-ueW" secondAttribute="top" id="Oni-Vj-uKU"/>
+                                                <constraint firstAttribute="bottom" secondItem="DKv-pk-uCf" secondAttribute="bottom" id="Y3i-fU-WXk"/>
+                                                <constraint firstAttribute="trailing" secondItem="DKv-pk-uCf" secondAttribute="trailing" id="yU3-kv-OC8"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="3FA-4j-ueW" firstAttribute="centerY" secondItem="kN1-0W-iTx" secondAttribute="centerY" id="eWg-OX-fkJ"/>
+                                        <constraint firstItem="3FA-4j-ueW" firstAttribute="centerX" secondItem="kN1-0W-iTx" secondAttribute="centerX" id="qOQ-x1-lLv"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cMx-kR-stf" secondAttribute="trailing" id="Bw4-aA-RvG"/>
+                            <constraint firstItem="cMx-kR-stf" firstAttribute="top" secondItem="8pa-Bp-kZ9" secondAttribute="top" id="Gal-t6-1FZ"/>
+                            <constraint firstItem="cMx-kR-stf" firstAttribute="leading" secondItem="8pa-Bp-kZ9" secondAttribute="leading" id="RFz-gI-Ibs"/>
+                            <constraint firstAttribute="bottom" secondItem="cMx-kR-stf" secondAttribute="bottom" id="jhg-XP-daP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WhR-HR-3kj"/>
+                    </view>
+                    <connections>
+                        <outlet property="off" destination="NmR-uN-24P" id="y4C-7T-pDZ"/>
+                        <outlet property="stackView" destination="DKv-pk-uCf" id="UJl-zH-xad"/>
+                        <outlet property="stackViewContainer" destination="3FA-4j-ueW" id="Dx8-tL-zb7"/>
+                        <outlet property="visualEffectView" destination="cMx-kR-stf" id="nkn-As-kgs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iY0-Kf-66n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2657" y="137"/>
+        </scene>
+    </scenes>
+</document>
